@@ -6,7 +6,7 @@ pipeline
   
   stage("打包"){
     steps{
-     bat label:'',script: 'echo build'
+    sh label:'',script: 'echo build'
     }
   }
   }
