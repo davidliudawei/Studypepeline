@@ -9,5 +9,10 @@ pipeline
    bat label:'',script: 'echo build'
     }
   }
+    stage("fa bu"){
+      steps{
+        bat label:'', script:'echo devolpy'
+      }
+    }
   }
 }
