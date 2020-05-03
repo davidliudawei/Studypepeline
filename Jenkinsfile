@@ -32,4 +32,5 @@ pipeline
     
     aborted{
       bat label:'',script:'echo aborted'
+    }
 }
