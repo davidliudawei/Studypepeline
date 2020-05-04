@@ -5,7 +5,11 @@ pipeline
     string (name:'str',defaultValue:'default',description:'this is string param')
     booleanParam(name:'bool',defaultValue:'default',description:'this is bool param')
     text(name:'text',defaultValue:'this is text',description:'this is text param')
-    choice(name:'chs',choices['ios','android','pc'],description:'this is hard choice')
+     choice(
+      description: '你需要选择哪个模块进行构建 ?',
+      name: 'modulename',
+      choices: ['Module1', 'Module2', 'Module3']
+    )
   }
   stages{
   
