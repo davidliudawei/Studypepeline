@@ -18,6 +18,10 @@ pipeline
 timestamps()
     timeout(time:5,unit:'SECONDS')
   }
+  
+  environment{
+    foo='fooooooooooooooooooooooooooooooooo'
+  }
   stages{
   
   stage("BUILD"){
@@ -27,6 +31,7 @@ timestamps()
        bat label:'',script:"echo ${params.str}"
        bat label:'',script:"echo ${params.text}"
        bat label:'',script:"echo ${params.modulename}"
+      bat label:'',script:"echo ${foo}"
      //  echo "Build stage: 选中的构建Module为 : ${params.modulename} ..." 
       
     }
