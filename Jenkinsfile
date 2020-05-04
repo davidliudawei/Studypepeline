@@ -2,7 +2,10 @@ pipeline
 {
   agent any
   parameters{
-    string (name:'str',defaultValue:'default',description:'这是一个string')
+    string (name:'str',defaultValue:'default',description:'this is string param')
+    booleanParam(name:'bool',defaultValue:'default',description:'this is bool param')
+    choice(name:'cho',choices['ios',android','pc'],description:'this is choice param')
+    text(name:'text',defaultValue:'test text',description:'this is text param')
     
   }
   stages{
