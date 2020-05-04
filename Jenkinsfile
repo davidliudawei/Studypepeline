@@ -5,7 +5,7 @@ pipeline
     string (name:'str',defaultValue:'default',description:'this is string param')
     booleanParam(name:'bool',defaultValue:'default',description:'this is bool param')
    text(name:'text',defaultValue:'this is text',description:'this is text param')
-    choice(name:'chs',choices:'ios'//'android',description:'this is choices')
+    
   }
   stages{
   
@@ -17,6 +17,7 @@ pipeline
     stage("DEVOLPY"){
       steps{
         bat label:'', script:'echo devolpy'
+        choice(name:'chs',choices['ios','android','pc'],description:'this is hard choice')
       }
     }
   }
