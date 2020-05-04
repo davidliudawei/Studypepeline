@@ -16,7 +16,7 @@ pipeline
     
     disableConcurrentBuilds()
 timestamps()
-    timeout(time:5,unit:'SECOND')
+    timeout(time:5,unit:'SECONDS')
   }
   stages{
   
