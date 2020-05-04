@@ -1,7 +1,10 @@
 pipeline
 {
   agent any
-  
+  parameters{
+    string (name:'str',defaultValue:'default',description:'这是一个string')
+    
+  }
   stages{
   
   stage("打包"){
