@@ -8,14 +8,19 @@ pipeline
      choice(
       description: '你需要选择哪个模块进行构建 ?',
       name: 'modulename',
-      choices: ['Module1', 'Module2', 'Module3']
+      choices: ['ios', 'android', 'Module3']
     )
   }
   stages{
   
   stage("BUILD"){
     steps{
-   bat label:'',script: 'echo build'
+      bat label:'',script: 'echo build'
+      bat label:'',script:'echo ${param.bool}'
+       bat label:'',script:'echo ${param.str}'
+       bat label:'',script:'echo ${param.text}'
+       bat label:'',script:'echo ${param.modulename}'
+      
     }
   }
     stage("DEVOLPY"){
