@@ -16,10 +16,11 @@ pipeline
   stage("BUILD"){
     steps{
       bat label:'',script: 'echo build'
-      bat label:'',script:"echo ${param.bool}"
-       bat label:'',script:"echo ${param.str}"
-       bat label:'',script:"echo ${param.text}"
-       bat label:'',script:"echo ${param.modulename}"
+      //bat label:'',script:"echo ${param.bool}"
+      // bat label:'',script:"echo ${param.str}"
+      // bat label:'',script:"echo ${param.text}"
+      // bat label:'',script:"echo ${param.modulename}"
+       echo "Build stage: 选中的构建Module为 : ${params.modulename} ..." 
       
     }
   }
