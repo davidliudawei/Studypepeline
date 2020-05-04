@@ -4,7 +4,7 @@ pipeline
   parameters{
     string (name:'str',defaultValue:'default',description:'this is string param')
     booleanParam(name:'bool',defaultValue:'default',description:'this is bool param')
-   text(name:'text',defaultValue:'text',description:'this is text param\\n next line')
+   text(name:'text',defaultValue:'this is text param\\n next line',description:'this is text param')
     
   }
   stages{
