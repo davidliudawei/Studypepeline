@@ -11,6 +11,12 @@ pipeline
       choices: ['ios', 'android', 'Module3']
     )
   }
+  
+  options{
+    
+    disableConcurrentBuilds()
+timestamps()
+  }
   stages{
   
   stage("BUILD"){
