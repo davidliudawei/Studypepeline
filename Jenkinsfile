@@ -26,7 +26,7 @@ timestamps()
   
   stage("BUILD"){
     steps{
-      bat label:'',script: 'echo build'
+      bat label:'ddddddddddddddbuild',script: 'echo build'
       bat label:'',script:"echo ${params.bool}"
        bat label:'',script:"echo ${params.str}"
        bat label:'',script:"echo ${params.text}"
